@@ -1,5 +1,14 @@
+body {
+    margin: 0;
+    padding: 32px;
 
+}
 .container_fluid {
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(0,3fr);
+}
+
+.container_fluid > div img {
+    display: block;
+    width: 100%;
 }
