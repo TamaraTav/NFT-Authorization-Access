@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import 'variables.css';
+
 *{
     font-family: 'Inter', sans-serif;
 }
@@ -15,7 +17,77 @@ body {
     grid-template-columns: minmax(0, 2fr) minmax(0,3fr);
 }
 
+.form_container {
+    width: 360px;
+    margin: auto;
+}
+
+.logo {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: var(--secondary-color);
+}
+
+p {
+    color: var(--accent-2);
+    margin-top: 0px;
+    margin-bottom: 56px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .container_fluid > div img {
     display: block;
     width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    padding-left: 14px;
+    padding-right: 48px;
+    width: 100%;
+    height: 44px;
+    display: block;
+    border: 1px solid var(--bg);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: var(--accent-2);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.form-group > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.form-group img {
+    position: absolute;
+    z-index: 1;
+    right: 14px;
+    cursor: pointer;
 }
